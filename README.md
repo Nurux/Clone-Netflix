@@ -26,10 +26,10 @@ O clone não ficou igual justamente porque quis colocar um toque meu no projeto,
 
 A primeira versão do codigo foi estruturada utilizando o flexbox como padrão, o que não é recomendado. Porém
 é interessante praticar mesmo assim. 
-#
+
 Lembrem-se o flexbox é melhor utilizado para posicionamento de elementos dentro do seu site, não é recomendado fazer
 estruturas com ele.
-
+#
 #### Dificuldades encontradas
 Bom nesta parte a maior dificuldade encontrada foi na real estruturação do site, principalmente nos links do footer já que para ficarem corretamente ordenados temos que definir um wrap no flexbox e fazer um calculo de ocupação para cada elemento. Nada muito dificil de se resolver, mas acredito que seja um impecilio quando estamos falando de alta produtividade, acredito que é por esse motivo que grid é muito mais indicado neste caso.
 
