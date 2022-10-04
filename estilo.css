@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 5000px;
+    background: url(/img/Backgorund-photoshop.png);
+    background-attachment: fixed;
+    color: white;
+}
+
+/*-----Configuração Menu-----*/
+nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.489);
+    height: 10%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+ul {
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.buttons {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(36, 41, 43);
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.buttons:hover{
+    color: red;
+}
+/*-----Fim Menu-----*/
+
+
+/*-----Configurando Sub_menu-----*/
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul li a:hover{
+    color: red;
+}
+
+nav ul ul li a {
+    display: block;
+}
+/*-----Fim Sub_menu-----*/
+
+
+/*-----Configuração texto1-----*/
+.text{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    font-size: 70px; 
+    text-align: center;
+}
+
+.desc{
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+/*-----Fim texto1-----*/
+
+
+/*-----Configuração Caixa_email-----*/
+.email{
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+}
+
+input[type="email"]{
+    width: 50em;
+    height: 2em;
+}
+
+input[type="button"]{
+    width: 7em;
+    color: white;
+    background-color: red;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+/*------Fim Caixa_email-----*/
+
+
+/*-----Configuração de Linha-----*/
+.linha{
+    background-color: gray;
+    height: 20px;
+}
+/*-----Fim Linha-----*/
+
+
+/*-----Configurando Texto2-----*/
+.text-2 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+.desc2{
+    display: flex;
+    flex-direction: row;
+    height: 665px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    background-color: black;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-top: 7em;
+}
+
+#tv{
+    width: 25em;
+}
+/*-----Fim texto2-----*/
+
+
+/*-----Congifurando Text3-----*/
+.desc3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 465px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    background-color: black;
+}
+
+#celular{
+    width: 20em;
+}
+
+.desc3 .conteudo{
+    display: flex;
+    flex-direction:column;
+    margin-left: 0;
+    margin-right: 2em;
+    margin-top: 5em;
+}
+
+.desc3 .text-2{
+   margin-left: 0;
+}
+/*-----Fim text3-----*/
+
+
+/*-----Configurando Text4-----*/
+.desc4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 665px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    background-color: black;
+}
+
+#mac{
+    width: 20em;
+    margin-right: 3em;
+}
+
+.desc4 .conteudo{
+    margin-top: 6em;
+}
+
+.desc4 .text-2{
+    margin-left: 0;
+}
+/*-----Fim text4-----*/
+
+
+/*-----Configurando Text5-----*/
+.desc5{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 665px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    background-color: black;
+}
+
+#infantil{
+    width: 22em;
+}
+
+.desc5 .conteudo{
+    margin-left: 0;
+    margin-right: 2em;
+    margin-top: 6em;
+}
+
+.desc5 .text-2{
+    margin-left: 0;
+}
+/*-----Fim text5-----*/
+
+
