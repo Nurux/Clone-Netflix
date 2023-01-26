@@ -24,9 +24,8 @@ nav {
 
 .container {
     width: 90%;
-    max-width: 1600;
+    max-width: 1600px;
     display: flex;
-    justify-content: space-between;
     align-items: center;    
 }
 
@@ -80,6 +79,7 @@ nav ul ul li a:hover{
 
 nav ul ul li a {
     display: block;
+    cursor: pointer;
 }
 /*-----Fim Sub_menu-----*/
 
@@ -92,7 +92,7 @@ nav ul ul li a {
     text-align: center;
 }
 
-.desc{
+.destaque{
     height: 40em;
     display: flex;
     flex-direction: column;
@@ -117,7 +117,14 @@ input {
 input[type="email"]{
     width: 50em;
     height: 4em;
+
+    max-width: 750px;
+    max-height: 50px;
+
+    font-size: 20px;
+    padding: 10px;
 }
+
 
 .email button{
     width: 7em;
@@ -141,20 +148,24 @@ input[type="email"]{
 /*-----Fim Linha-----*/
 
 
-/*-----Configurando Texto2-----*/
-.text-2 {
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0 auto;
-    font-size: 50px;
-}
-
-.desc2{
+.desc{
     display: flex;
     flex-direction: row;
-    height: 665px;
+    justify-content: space-between;
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
     background-color: black;
+}
+
+/*-----Configurando Texto2-----*/
+.text-2 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    font-size: 50px;
+}
+
+.desc[id="area_2"]{
+    height: 665px;
 }
 
 .conteudo{
@@ -171,21 +182,16 @@ input[type="email"]{
 
 
 /*-----Congifurando Text3-----*/
-.desc3{
-    display: flex;
+.desc[id="area_3"]{
     flex-direction: row-reverse;
-    justify-content: space-between;
     height: 465px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    background-color: black;
 }
 
 #celular{
     width: 20em;
 }
 
-.desc3 .conteudo{
+.desc[id="area_3"] .conteudo{
     display: flex;
     flex-direction:column;
     margin-left: 0;
@@ -193,21 +199,15 @@ input[type="email"]{
     margin-top: 5em;
 }
 
-.desc3 .text-2{
+.desc[id="area_3"] .text-2{
    margin-left: 0;
 }
 /*-----Fim text3-----*/
 
 
 /*-----Configurando Text4-----*/
-.desc4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.desc[id="area_4"]{
     height: 665px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    background-color: black;
 }
 
 #mac{
@@ -215,57 +215,49 @@ input[type="email"]{
     margin-right: 3em;
 }
 
-.desc4 .conteudo{
+.desc[id="area_4"].conteudo{
     margin-top: 6em;
 }
 
-.desc4 .text-2{
+.desc[id="area_4"].text-2{
     margin-left: 0;
 }
 /*-----Fim text4-----*/
 
 
 /*-----Configurando Text5-----*/
-.desc5{
-    display: flex;
+.desc[id="area_5"]{
     flex-direction: row-reverse;
-    justify-content: space-between;
     height: 665px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    background-color: black;
 }
 
 #infantil{
     width: 22em;
 }
 
-.desc5 .conteudo{
+.desc[id="area_5"] .conteudo{
     margin-left: 0;
     margin-right: 2em;
     margin-top: 6em;
 }
 
-.desc5 .text-2{
+.desc[id="area_5"] .text-2{
     margin-left: 0;
 }
 /*-----Fim text5-----*/
 
 
 /*-----Configurando Text6-----*/
-.desc6{
-    display: flex;
+.desc[id="area_6"]{
     flex-direction: column;
-    height: 50em;
-    background-color: black;
-    font-family: 'Ubuntu', sans-serif;
+    height: 30em;
 }
 
-.desc6 .text-2{
+.desc[id="area_6"] .text-2{
     margin-bottom: 20px;
 }
 
-.desc6 p {
+.desc[id="area_6"] p {
     text-align: center;
     font-size: 20px;
     margin-bottom: 5px;
@@ -336,17 +328,21 @@ footer p {
     margin-left: 40px;
 }
 
-footer ul {
+#links{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     justify-content: left;
     margin-left: 40px;
 }
 
 footer li {
-    width: 20em;
+    width: 12em;
     margin-right: 2em;
     padding-top: 20px;
 }
@@ -363,3 +359,101 @@ footer .buttons{
 }
 /*-----Fim footer-----*/
 
+
+/*-----Responsividade-----*/
+@media(max-width: 2560px){
+    .container {
+        justify-content: space-between;
+    }
+
+    .buttons {
+        padding: 20px;
+    }
+
+    .container a {
+        font-size: 25px;
+    }
+   
+    .email button{
+        width: 10em;
+        font-size: 30px;
+    }
+
+    .desc {
+        justify-content: center;
+        gap: 90px;
+    }
+
+    .desc[id="area_6"]{
+        gap: 0;
+    }
+
+    .desc[id="area_3"]{
+        height: 20em;
+    }
+
+    footer {
+        font-size: 30px;
+        height: 500px;
+    }
+
+    footer a{
+        font-size: 20px;
+    }
+
+    footer p {
+        margin-top: 30px;
+        font-size: 14px;
+    }    
+
+    footer ul {
+        width: 50em;
+    }
+}
+
+@media(max-width: 2020px){
+
+    footer a{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1440px){
+    .email button {
+        width: 8em;
+        font-size: 30px;
+    }
+
+    .desc {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .buttons {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container a {
+        font-size: 20px;
+    }
+
+    footer ul {
+        width: 20;
+    }
+}
+
+@media(max-width: 1024px){
+
+    .desc2{
+        width: 1024px;
+    }
+
+    footer li{
+        width: auto;
+    }
+
+    footer a{
+        font-size: 12px;
+    }
+}

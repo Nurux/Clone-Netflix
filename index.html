@@ -18,7 +18,7 @@
             <ul>
                 <li><a class="buttons" href=""><i class="fas fa-globe"></i> Português</a>
                     <ul>
-                        <li><a href="">Inglês</a></li>
+                        <li><a onclick="language('ingles')">Inglês</a></li>
                         <li><a href="">Espanhol</a></li>
                         <li><a href="">Miau</a></li>
                     </ul>
@@ -29,22 +29,22 @@
     </nav>            
 
     <!---Textos--->
-    <div class="desc">
+    <div class="destaque" id="area_1">
         <h1 class="text">Filmes, séries e muito<br>mais. Sem limites.</h1>
         <h3>Assista onde quiser. Cancele quando quiser.</h3>
         <br>
         <p>Pronto para assistir? Informe seu e-mail para criar ou reinicie sua assinatura</p>
         <br>
         <div class="email">
-            <input type="email" value="E-mail" required>
-            <button>Vamos lá<i class="fa-solid fa-chevron-right"></i></button>
+            <input type="email" placeholder="E-mail"  required>
+            <button id="email">Vamos lá <i class="fa-solid fa-chevron-right"></i></button>
         </div>
     </div>
 
     <div class="linha">
     </div>
 
-    <div class="desc2">
+    <div class="desc" id="area_2">
         <div class="conteudo">
             <h2 class="text-2">Aproveite na TV.</h2><br>
             <p>
@@ -59,7 +59,7 @@
     <div class="linha">
     </div>
 
-    <div class="desc3">
+    <div class="desc" id="area_3">
         <div class="conteudo">
             <h2 class="text-2">Baixe séries para<br>assistir offline</h2><br>
             <p>
@@ -73,7 +73,7 @@
     <div class="linha">
     </div>
 
-    <div class="desc4">
+    <div class="desc" id="area_4">
         <div class="conteudo">
             <h2 class="text-2">Assista quando<br>quiser.</h2><br>
             <p>
@@ -87,7 +87,7 @@
     <div class="linha">
     </div>
 
-    <div class="desc5">
+    <div class="desc" id="area_5">
         <div class="conteudo">
             <h2 class="text-2">Crie perfis para<br>crianças.</h2><br>
             <p>
@@ -102,7 +102,7 @@
     <div class="linha">
     </div>
 
-    <div class="desc6">
+    <div class="desc" id="area_6">
         <div class="perguntas">
             <h2 class="text-2">Perguntas frequentes</h2>
             <br>
@@ -193,8 +193,8 @@
         </div>
         <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
         <div class="email">
-            <input type="email" value="E-mail" required>
-            <button>Vamos lá<i class="fa-solid fa-chevron-right"></i></button>
+            <input type="email" placeholder="E-mail" required>
+            <button id="email">Vamos lá<i class="fa-solid fa-chevron-right"></i></button>
         </div>
         <br>
         <br>
@@ -203,29 +203,34 @@
     <div class="linha">
     </div>
 
-
+    <!--Footer-->
     <footer>
         <h3>Duvidas? Ligue 0800-761-4631</h3>
-        <ul>
-            <li><a href="">Perguntas frequentes</a></li>
-            <li><a href="">Centro de ajuda</a></li>
-            <li><a href="">Conta</a></li>
-            <li><a href="">Media center</a></li>
-            <li><a href="">Relações com investimentos</a></li>
-            <li><a href="">Carreiras</a></li>
-            <li><a href="">Resgatar cartão pré-pago</a></li>
-            <li><a href="">Comprar cartão pré-pago</a></li>
-            <li><a href="">Formas de assistir</a></li>
-            <li><a href="">Termos de uso</a></li>
-            <li><a href="">Privacidade</a></li>
-            <li><a href="">Preferêcias de cookies</a></li>
-            <li><a href="">Informações corporativas</a></li>
-            <li><a href="">Entre em contato</a></li>
-            <li><a href="">Teste de velocidade</a></li>
-            <li><a href="">Avisos legais</a></li>
-            <li><a href="">Só na Netflix</a></li>
-        </ul>
-        <br>
+        <div id="links">
+            <ul id="col_1">
+                <li><a href="">Perguntas frequentes</a></li>
+                <li><a href="">Media center</a></li>
+                <li><a href="">Resgatar cartão pré-pago</a></li>
+                <li><a href="">Termos de uso</a></li>
+                <li><a href="">Informações corporativas</a></li>
+                <li><a href="">Avisos legais</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Centro de ajuda</a></li>
+                <li><a href="">Relações com investimentos</a></li>
+                <li><a href="">Comprar cartão pré-pago</a></li>
+                <li><a href="">Privacidade</a></li>
+                <li><a href="">Entre em contato</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Conta</a></li>
+                <li><a href="">Carreiras</a></li>
+                <li><a href="">Formas de assistir</a></li>
+                <li><a href="">Preferêcias de cookies</a></li>
+                <li><a href="">Teste de velocidade</a></li>
+                <li><a href="">Só na Netflix</a></li>
+            </ul>
+        </div>
         <br>
         <a class="buttons" href=""><i class="fas fa-globe"></i> Português <i class="fa-solid fa-chevron-down"></i></a>
         <p>Netflix Brasil</p>
