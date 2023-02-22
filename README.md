@@ -28,7 +28,7 @@ A primeira versão do codigo foi estruturada utilizando div como padrão. O flex
 
 Lembrem-se o flexbox é melhor utilizado para posicionamento de elementos dentro do seu site, não é recomendado fazer
 estruturas com ele.
-#
+
 #### Dificuldades encontradas
 Bom nesta parte a maior dificuldade encontrada foram os comandos para ultilizar de fato a flexbox, mas nada que uma estudada não resolva. Depois de aprender realmente como funciona o flexbox foi bem facil realizar o projeto.
 
